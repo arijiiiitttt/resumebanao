@@ -1,6 +1,9 @@
 "use client"; 
 import React from 'react';
 import { useRouter } from 'next/navigation'; 
+
+
+
 const FirstPg = () => {
   const router = useRouter();
 
@@ -13,7 +16,7 @@ const FirstPg = () => {
   };
 
   return (
-    <div className="h-[92vh] w-full bg-[#F5F5F5] flex items-center justify-center">
+    <div className="h-[94vh] w-full bg-[#F5F5F5] flex items-center justify-center">
       <div className="text-center space-y-3">
         <p className='text-3xl font-light'>Tired with your Old Resume🥱</p>
         <h1 className="text-6xl text-[#08285f] font-bold bowl">Let's Build The Best Resume</h1>
