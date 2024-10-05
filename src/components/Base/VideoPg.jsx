@@ -16,7 +16,7 @@ const VideoPg = () => {
            
             <button
                 onClick={handleDemoClick}
-                className="flex items-center bg-white text-black py-4 px-7 rounded-full shadow-md hover:bg-orange-400 transition duration-300 ease-in-out"
+                className="flex items-center text-md bg-white text-black py-3 px-7 rounded-full shadow-md hover:bg-orange-300 transition duration-300 ease-in-out"
                 aria-label="Navigate to Video Demo Page"
             >
                 <PiPlayCircleLight size={24} className="mr-2" />
