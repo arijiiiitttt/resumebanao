@@ -5,7 +5,7 @@ import React from 'react'
 
 const Fooder = () => {
   return (
-    <div className="lg:text-[15px] text-center lg:py-2 text-black bg-blue-100" id='contactPg'>
+    <div className="lg:text-[15px] text-center lg:py-2 text-black bg-white" id='contactPg'>
       <div className="flex flex-row  gap-[0.2rem] lg:gap-1.5 justify-center items-center cursor-pointer animate-bounce">
         <a href="https://github.com/arijiiiitttt" target="_blank" rel="noopener noreferrer">
           <FaGithubAlt className="lg:size-[1.02rem] " />
