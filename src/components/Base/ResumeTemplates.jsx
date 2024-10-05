@@ -5,29 +5,24 @@ export default function ResumeTemplates() {
   const [resumeTemplates] = useState([
     {
       id: 1,
-      name: 'Classic Template',
+      name: 'Template 01',
       imageUrl: '/formats/format1.png', 
     },
     {
       id: 2,
-      name: 'Modern Template',
-      imageUrl: '/formats/format2.png', // Missing image, we will handle this below
+      name: 'Template 02',
+      imageUrl: '/formats/format2.png', 
     },
     {
       id: 3,
-      name: 'Creative Template',
+      name: 'Template 03',
       imageUrl: '/formats/format3.png',
     },
     {
       id: 4,
-      name: 'Minimal Template',
+      name: 'Template 04',
       imageUrl: '/formats/format4.png',
-    },
-    {
-      id: 5,
-      name: 'Professional Template',
-      imageUrl: '/formats/',
-    },
+    }
   ]);
 
   const handleTemplateSelect = (template) => {
@@ -41,14 +36,14 @@ export default function ResumeTemplates() {
           here are the templates 🤯🧾
         </h1>
 
-        {/* Template Cards */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-16 pb-16">
           {resumeTemplates.map((template) => (
             <div
               key={template.id}
               className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-72 h-auto"
             >
-              {/* Template Image */}
+             
               <div className="h-96 w-full bg-gray-200 flex items-center justify-center">
                 {template.imageUrl ? (
                   <img
@@ -61,7 +56,7 @@ export default function ResumeTemplates() {
                 )}
               </div>
 
-              {/* Template Info */}
+             
               <div className="p-4 text-center">
                 <h2 className="text-lg font-semibold text-gray-800">
                   {template.name}
@@ -70,7 +65,7 @@ export default function ResumeTemplates() {
                   onClick={() => handleTemplateSelect(template)}
                   className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                 >
-                  Choose Template
+                  Lets Build
                 </button>
               </div>
             </div>
